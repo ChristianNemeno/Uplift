@@ -15,7 +15,7 @@ class ProfileActivity : Activity() {
         val backProfileBtn: ImageButton = findViewById(R.id.profile_back_button)
         val editProfileBtn: Button = findViewById(R.id.editProfileButton)
 
-        // Get references to TextViews
+
         val nameTextView: TextView = findViewById(R.id.nameTextView)
         val usernameTextView: TextView = findViewById(R.id.usernameTextView)
         val addressTextView: TextView = findViewById(R.id.addressTextView)
@@ -42,7 +42,7 @@ class ProfileActivity : Activity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 1 && resultCode == RESULT_OK && data != null) {
-            // Update TextViews with new data
+
             findViewById<TextView>(R.id.nameTextView).text = data.getStringExtra("name")
             findViewById<TextView>(R.id.usernameTextView).text = data.getStringExtra("username")
             findViewById<TextView>(R.id.addressTextView).text = data.getStringExtra("address")

@@ -11,7 +11,7 @@ class EditProfileActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_profile)
 
-        // Get references to EditTexts
+
         val nameEditText: EditText = findViewById(R.id.editName)
         val usernameEditText: EditText = findViewById(R.id.editUsername)
         val addressEditText: EditText = findViewById(R.id.editAddress)
@@ -19,7 +19,7 @@ class EditProfileActivity : Activity() {
         val emailEditText: EditText = findViewById(R.id.editEmail)
         val saveButton: Button = findViewById(R.id.saveButton)
 
-        // Set current values
+
         nameEditText.setText(intent.getStringExtra("name"))
         usernameEditText.setText(intent.getStringExtra("username"))
         addressEditText.setText(intent.getStringExtra("address"))
